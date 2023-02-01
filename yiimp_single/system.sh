@@ -21,10 +21,12 @@ function print_error {
 }
 trap print_error ERR
 
-term_art
+function term_art() {
+  echo "This is a custom term art function"
 echo -e "$MAGENTA    <-------------------------->$COL_RESET"
 echo -e "$YELLOW     <-- System Configuration -->$COL_RESET"
 echo -e "$MAGENTA    <-------------------------->$COL_RESET"
+}
 
 # Set timezone
 echo
